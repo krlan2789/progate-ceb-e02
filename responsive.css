@@ -196,6 +196,11 @@
       font-size: 18px;
     }
 
+    .card {
+      height: 445px;
+      font-size: smaller;
+    }
+
     .card a.btn-order {
       font-size: x-small;
     }
@@ -210,7 +215,7 @@
 
   @media (max-width: 350px) {
     .card {
-      margin-left:8px;
+      height: 490px;
     }
     .top-wrapper h1 {
       font-size: 15px;
@@ -234,8 +239,5 @@
     .top-wrapper h1 {
       font-size: 15px;
       
-    }
-    .card {
-      margin-left:-7px;
     }
   }
