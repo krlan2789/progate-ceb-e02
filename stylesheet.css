@@ -1,0 +1,519 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial";
+}
+
+a {
+  text-decoration: none;
+}
+.clear {
+  clear: left;
+}
+
+header {
+  height: 80px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+.logo {
+  width: 124px;
+  height:100%;
+  margin-top: 25px;
+  margin-right:10px;
+}
+
+.header-left {
+  float: left;
+}
+.header-right a{
+  text-align: right;
+  line-height: 80px; 
+  margin:0px 20px;
+  color: black;
+  font-weight:bold;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+/*DROPDOWN*/
+.loginkanan {
+  color:#5384d4;
+  font-size:15px;
+  
+}
+.header-kanan {
+  padding-top:15px;
+  display:none;
+}
+
+.header-kanan ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  float:right;
+  
+}
+
+.header-kanan > ul > li {
+  float: left;
+}
+
+
+.header-kanan li a {
+  display: inline-block;
+  color: black;
+  text-align: left;
+  padding: 14px 16px;
+  
+}
+
+.header-kanan li a:hover{
+  background-color: grey;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown:hover .isi-dropdown {
+  display: block;
+}
+
+.isi-dropdown a:hover {
+  color: #fff !important;
+}
+
+.isi-dropdown {
+  position: absolute;
+  display: none;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  background-color: #f9f9f9;
+}
+
+.isi-dropdown a {
+  color: #3c3c3c !important;
+}
+
+.isi-dropdown a:hover {
+  color: #232323 !important;
+  background: #f3f3f3 !important;
+}
+
+
+/*-------*/
+.login a{
+  line-height: 60px;
+  font-weight:bold;
+  color:#00BFFF;
+  float:right;
+  display:block;
+}
+.fa {
+  margin-right: 5px;
+}
+.header-right a:hover {
+  color: #00BFFF;
+}
+.login a:hover {
+  background-color: rgb(176,196,222, 0.9);
+
+}
+
+.container {
+  max-width:1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(https://i.ibb.co/wMxQVhg/big-idea-2-banner-adobe-stock-0-1.jpg);
+  background-size: cover;
+  color: white;
+  text-align: Left;
+
+}
+
+.top-wrapper h1 {
+  opacity: 1;
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  font-weight:bold;
+}
+.promo-list h2 {
+  opacity: 1;
+  font-size: 30px;
+  letter-spacing: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight:normal;
+}
+ul{
+  list-style-type:circle;
+  margin-left: 22px;
+}
+li {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-size:15px;
+}
+
+.btn-wrapper {
+  text-align: left;
+  margin: 20px 0;
+}
+.signup {
+  background-color: rgba(0,191,255, 0.9);
+}
+
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.btn-wrapper p {
+  font-size:12PX;
+  margin: 10px 0;
+}
+.btn-wrapper span {
+  color:#00BFFF;
+  font-weight:bold;
+}
+
+
+    /*MAIN*/
+    
+
+.containerrr {
+  max-width: 1170px;
+  width: 100%;
+  height: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  background-color: #409af2;
+  opacity: 0.9;
+  margin-top:40px;
+}
+img {
+  width: 110px;
+  height: 110px;
+}
+.main {
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+  background: url(https://images.pexels.com/photos/251225/pexels-photo-251225.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+  background-size:cover;
+}
+.feature {
+  
+  background-color: white;
+  width: 25%;
+  margin:0px 3px;
+  padding-bottom:20px;
+  margin-bottom: 60px;
+  border-radius: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.features {
+  margin-left: 10px;
+  display: flex;
+  flex-direction:row;
+  margin-right: 10px;
+}
+
+.heading h2 {
+  padding-top: 50px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+}
+.heading h3 {
+  padding-top: 20px;
+  margin-bottom: 50px;
+  color: white;
+}
+h4{
+  font-weight: bold;
+}
+.description {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 15px;
+}
+.feature:hover {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  animation-name: example;
+  animation-duration: 0.5s;
+  border-left: 8px solid rgb(155, 155, 155);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+      /*EXTRAMAIN*/
+
+strong.price {
+  font-size: 32px;
+  color: #46a4ff;
+}
+
+.extra-main {
+  color: rgb(77, 77, 77);
+  /* background-color:#f5f5f5; */
+  opacity: 0.9;
+  padding: 0 !important;
+  text-align: center;
+  background-size: cover;
+  margin-top:30px;
+  margin-bottom:30px;
+}
+
+.extra-main .containerrrr {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1170px;
+  width: 100%;
+  height: 100%;
+  padding: 5px 25px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.extra-main-head {
+  flex: auto;
+  padding: 20px 6%;
+  width: 100%;
+  background-color: white;
+}
+
+hr {
+  width: 25%;
+  border-color: #46a4ff;
+  border-style: solid;
+}
+
+.extra-main h2 {
+  font-family: "PT Sans",sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  color: gray;
+  font-weight: bold;
+}
+
+.extra-main h3 {
+  font-size: 20px;
+  font-family: "PT Sans",sans-serif;
+  font-weight: 5;
+  margin-bottom: 20px;
+  /* color: #46a4ff; */
+}
+
+.extra-main p {
+  font-family: "PT Sans",sans-serif;
+  font-size: larger;
+  line-height: 24px;
+}
+
+.extra-main-content {
+  flex: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px 10%;
+  max-height: inherit;
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+.card {
+  flex: auto;
+  font-family: "PT Sans",sans-serif;
+  font-weight: 300;
+  height: 450px;
+  width: 30%;
+  padding: 25px 20px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.card:hover {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 3px 6px rgba(0,0,0,0.24);
+}
+
+.card h4, .card h5 {
+  margin: 10px 0;
+  font-weight: 300;
+  color: dimgray;
+}
+
+.card h5 {
+  font-size: 13px;
+}
+
+.card .font-smaller {
+  font-size: 12px;
+  color: dimgray;
+}
+
+.card .card-spec {
+  margin: 20px 0;
+  font-size: smaller;
+}
+
+.card div.price {
+  margin: 25px 0;
+}
+
+.card div.order-package {
+  margin: 30px 0;
+}
+
+.card a.btn-order {
+  /* display: inline-block; */
+  text-decoration: none;
+  color: #46a4ff;
+  background-color: white;
+  width: 150px;
+  border: 3px solid #46a4ff;
+  font-weight: 600;
+  font-size: 100%;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color .4s linear,color .4s linear;
+}
+
+.card a.btn-order:hover {
+  color: white;
+  background-color: #46a4ff;
+  border-color: whitesmoke;
+  border-radius: 4px;
+}
+
+
+
+
+/*FOOTER*/
+
+footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ .containerr {
+  background-color:rgb(17, 17, 20);
+  color: #ffffff;
+  padding: 50px;  
+  width: 100%;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top:20px;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+footer div {
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+}
+.footer-left {
+  width: 50%;
+  line-height: 40px;
+  float: left;
+}
+
+.footer-right {
+  padding-left: 100px;
+  width: 50%;
+  float: right;
+  line-height: 50px;
+}
+
+.footer-right div {
+  width: 32%;
+  padding-right: 20px;
+}
+
+.footer-right a {
+  color: white;
+}
+
+.subscription {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.subscription .email {
+  height: 40px;
+  width: 60%;
+  outline: none;
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+.subscription .btn  {
+  display: inline-block;
+  height: 40px;
+  width: 30%;
+  padding: 10px 30px;
+  background-color: #0981f1;
+  color: white;
+  font-size: 18px;
+  outline: none;
+  margin-left: 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  opacity: 0.8;
+}
+
+.subscription .btn:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.social-media .fa {
+  margin-right: 20px;
+  width: 1px;
+}
+.social-mediaa {
+  padding:40px 0;
+  display:none;
+}
+.social-mediaa .fa {
+  float:left;
+  margin:13px 5px 0px 0px;
+  display:none;
+}
